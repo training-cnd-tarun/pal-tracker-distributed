@@ -2,8 +2,8 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
-  memory: 1G
+  - route: registration-pal-tarun.chaturvedi.cfapps.io
+  memory: 412M
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
