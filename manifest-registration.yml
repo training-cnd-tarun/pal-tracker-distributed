@@ -3,7 +3,7 @@ applications:
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
   - route: registration-pal-tarun-chaturvedi.cfapps.io
-  memory: 412M
+  memory: 512M
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'

@@ -3,7 +3,7 @@ applications:
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
   - route: timesheets-pal-tarun-chaturvedi.cfapps.io
-  memory: 412M
+  memory: 512M
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: https://registration-pal-tarun-chaturvedi.cfapps.io
