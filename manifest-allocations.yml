@@ -1,12 +1,12 @@
 applications:
-- name: tracker-allocations
+- name: tracker-allocations-123
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-tarun-chaturvedi.cfapps.io
-  memory: 512M
+  - route: allocations-pal-tarun-chaturvedi.apps.dev.pcf-aws.com
+  memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-tarun-chaturvedi.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-tarun-chaturvedi.apps.dev.pcf-aws.com
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-allocations-database

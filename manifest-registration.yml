@@ -1,9 +1,9 @@
 applications:
-- name: tracker-registration
+- name: tracker-registration-123
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-tarun-chaturvedi.cfapps.io
-  memory: 512M
+  - route: registration-pal-tarun-chaturvedi.apps.dev.pcf-aws.com
+  memory: 1G
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
